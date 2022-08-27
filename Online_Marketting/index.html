@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+ -->
+
+	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+	<title>Online_Marketting</title>
+</head>
+<body>
+	<div class="nav-item ">
+		<ul class="nav bg-dark">
+			<div class="border bg-success rounded">
+				<span><img src="Images/Logo.png" height="60px"></span>
+				<span>Online Marketting</span>
+			 </div>
+  			<li class="nav-item">
+   			 	<a class="nav-link" href="#">Home</a>
+  			</li>
+  			<li class="nav-item">
+   			 	<a class="nav-link" href="#AboutUs">About us</a>
+  			</li>
+  			<li class="nav-item">
+   			 	<a class="nav-link" href="#Product">Product</a>
+  			</li>
+  			<li class="nav-item">
+   				 <a class="nav-link"onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Contact Us</a>
+  			</li>
+  			<li class="nav-item">
+   				 <a class="nav-link"onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Join Us</a>
+  			</li>
+  			<li class="nav-item">
+   				 <a class="nav-link"onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
+  			</li>
+  			<li class="nav-item">
+				<a class="nav-link disabled" href="#">Disabled</a>
+  			</li>
+  			<li class="nav-item">
+   				 <a class="nav-link" href="Data/index.html">Login_Part</a>
+  			</li>
+		</ul>	
+	</div>
+  	<div class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="Images/slider.jpeg" alt="First slide" width="640" height="560">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="Images/slider1.jpg " alt="Second slide" width="640" height="560">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="Images/slider0.jpg " alt="Third slide" width="640" height="560">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="Images/thank_u.jpg " alt="Third slide" width="640" height="560">
+    </div>
+  </div>
+</div>
+<!--Login Form-->
+<div id="id01" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Images/Login.jpg" alt="User_icon" class="User">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>     
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!--Join Us form-->
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Images/icon.png" alt="User_icon" class="User">
+    </div>
+
+    <div class="container">
+    	<label for="uname"><b>Referral Member Id</b></label>
+      <input type="text" placeholder="Enter Referral Member Id" name="uReferral" required>
+      <label for="uname"><b>Name</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="uname"><b>Email i'd</b></label>
+      <input type="text" placeholder="Enter Email i'd" name="uemail" required>
+      <label for="uname"><b>Contact</b></label>
+      <input type="text" placeholder="Enter Contact" name="ucontact" required>
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <label for="psw"><b>Confirm Password</b></label>
+      <input type="password" placeholder="Enter Confirm Password" name="psw" required> 
+      <button type="submit">Register</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<!--ContactUs-->
+<div id="id03" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="Images/icon.png" alt="User_icon" class="User">
+    </div>
+    <div class="container">
+      <label for="uname"><b>Name</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <label for="uemail"><b>Email i'd</b></label>
+      <input type="text" placeholder="Enter Email i'd" name="uemail" required>
+      <label for="ucontact"><b>Contact</b></label>
+      <input type="text" placeholder="Enter Contact" name="ucontact" required>
+ 			<label for="umessage"><b>Message</b></label>
+     	<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+     
+      <button type="submit">Send</button>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+<div>
+<div class="clearfix border" id="about">
+	<div id="AboutUs">
+		<span class="float-left"><img src="Images/01.jpg" height="450px" width="70%"></span>
+	</div> 
+	<p class="font-weight-bold">*About Online Marketting*</p>
+  <span class="float-left font-weight-bold" id="On">Welcome to Online Marketting</span><br>
+  <br>
+  <p>
+  	Onile Marketting is a young, dynamic organization offering its people an opportunity to grow and excel with it. We focus on achieving the highest standards of business excellence to pursue our mission to provide "Quality Services for Healthy Living", which shall keep us constantly ahead of competition.<br>
+  	<div class="float-left">
+  	<p class="font-weight-bold">Expert Business Trainer</p>
+			<p class="para">* Our expert teach you how to <br>
+				multiply your Business.</p>
+</div>
+<div>
+	<p class="font-weight-bold">Profesional</p>
+		<p class="para">*In the fight of survival a good
+		professional always wins.</p>
+</div>
+<div>
+<p class="font-weight-bold">Trusted Company</p>
+	<p class="para">*100% legal and secure company verified by Indian Government.</p>
+</div>
+ </p>
+</div>
+</div>
+<div class="bg-dark text-light">
+	<div class="font-weight-bold text-center" id="Product">Product</div>
+	<div class="clearfix text-center">
+		<div class="p-3 border " id="b">Phone,Laptop
+			<a href="#"><img id="img" src="Images/Lap.jpg">Click here</a>
+		</div>
+		<div class="p-3 border"id="b">Garment
+			<a href="#"><img id="img" src="Images/Garments.jpg">Click here</a>
+		</div>
+		<div class="p-3 border"id="b">Suit Lenght
+			<a href="#"><img id="img" src="Images/Suit Length.jpg">Click here</a>
+		</div>
+	</div>
+</div>
+<div id="team">
+	<div class="text-center font-weight-bold" id="ot">Our Testimonials</div>
+  <div class="clearfix border" >
+      <div class="float-left">Email</div>
+      <div class="float-right">Location</div>
+    </div>  
+
+      
+
+
+
+
+
+	<footer class="bg-dark text-center text-light" id="footer">  
+	    <p>© 2022 Online Marketting. All Rights Reserved. <a href="#">Privacy</a><a href="#">Terms</a></p>
+  </footer>
+	</div>
+	<!-- jQuery library -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
